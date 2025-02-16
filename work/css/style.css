@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* work */
+.main{
+    background: #cff1ff;
+    text-align: center;
+}
+.page-title{
+    font-size: 28px;
+    padding: 58px;
+}
+.container{
+    background: #ecfaff;
+    padding: 50px;
+    margin-bottom: 110px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    display: inline-block;
+}
+.form-title{
+    text-align: center;
+    font-size: 24px;
+}
+.form-group{
+    padding-top: 42px;
+    font-size: 18px;
+}
+.label-name{
+    font-size: 14px;
+    color: #464646;
+}
+.input-space{
+    padding-top: 24px;
+}
+span{
+    color: red;
+}
+.input-form{
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    height: 37px;
+    color: #545658;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.input-form:focus{
+    background-color: #fff;
+    border-color: rgba(93, 130, 194, 0.4);
+    box-shadow: 0px 0px 0px 2px rgba(1, 90, 191, 0.1);
+    outline: none;
+}
+.gender-name{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+}
+.gender-content{
+    appearance: none;
+    margin-left: 20px;
+    margin-right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.gender-name::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.gender-content:checked + .gender-name::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    width: 9px;
+    height: 9px;
+    background-color: #017cbf;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+.create-account{
+    background-color: #0382c7;
+    width: 100%;
+    height: 48px;
+    color: white;
+    border: 1px solid #d9d9d9;
+    margin-top: 45px;
+}
+.create-account:hover{
+    cursor: pointer;
+}
+.create-account:active{
+    background-color: white;
+    color: #0382c7;
+    border: 1px solid #d9d9d9;
+}
+.terms-text{
+    font-size: 10px;
+    padding-top: 30px;
+}
+.check-box{
+    padding-top: 24px;
+    padding-left: 15px;
+}
+a{
+    color: #0170bf;
+    text-decoration: none;
+}
+.subscription-box{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+  }
+  .subscription-box:checked::after {
+    content: "✓";
+    color: #0140bf;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Arial";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .label-name{
+    vertical-align: middle;
+  }
